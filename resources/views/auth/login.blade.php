@@ -15,7 +15,7 @@
                         <x-form-label for="email">Email</x-form-label>
                         <div class="mt-2">
                             <div class="flex items-center rounded-md bg-white pl-3 px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
-                                <x-form-input type="email" name="email" id="email"  required></x-form-input>
+                                <x-form-input type="email" name="email" id="email"  :value="old('email')" required></x-form-input>
 
                                 <x-form-error name="email"></x-form-error>
                             </div>
@@ -26,7 +26,7 @@
                         <x-form-label for="password">Password</x-form-label>
                         <div class="mt-2">
                             <div class="flex items-center rounded-md bg-white pl-3 px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
-                                <x-form-input type="password" name="password" id="password"  required></x-form-input>
+                                <x-form-input type="password" name="password" id="password" required></x-form-input>
 
                                 <x-form-error name="password"></x-form-error>
                             </div>
@@ -35,8 +35,6 @@
 
                 </div>
             </div>
-
-
 
 
 

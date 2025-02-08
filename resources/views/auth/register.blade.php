@@ -59,7 +59,7 @@
                         <x-form-label for="password_confirmation">Confirm Password</x-form-label>
                         <div class="mt-2">
                             <div class="flex items-center rounded-md bg-white pl-3 px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
-                                <x-form-input type="password_confirmation" name="password_confirmation" id="password_confirmation"  required></x-form-input>
+                                <x-form-input type="password" name="password_confirmation" id="password_confirmation"  required></x-form-input>
 
                                 <x-form-error name="password_confirmation"></x-form-error>
                             </div>
