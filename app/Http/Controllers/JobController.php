@@ -41,7 +41,7 @@ class JobController extends Controller
             'employer_id' => 1
         ]);
 
-        Mail::to($job->employer->user)->send(
+        Mail::to($job->employer->user)->queue(
             new JobPosted($job)
         );
 
@@ -52,7 +52,7 @@ class JobController extends Controller
 
     Gate::authorize('edit-job', $job);
 
-        return view('jobs.edit', ['job' => $job]);
+    return view('jobs.edit', ['job' => $job]);
     }
 
     public function update(Job $job) {
@@ -74,6 +74,7 @@ class JobController extends Controller
     }
 
     public function destroy(Job $job) {
+
         Gate::authorize('edit-job', $job);
 
         $job->delete();
