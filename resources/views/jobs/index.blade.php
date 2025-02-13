@@ -1,7 +1,7 @@
 <x-layout>
 
     <x-slot:heading>
-        Jobs Page
+        Jobs Featured
     </x-slot:heading>
 
     <div class="space-y-4">
